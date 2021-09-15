@@ -1,0 +1,84 @@
+.radio-nowrap {
+  display: flex;
+  flex: row nowrap;
+  overflow-x: auto;
+  scroll-behavior: smooth; // Smooth scrolling
+  -webkit-overflow-scrolling: touch;
+
+  .custom-control {
+    padding-left: 0;
+
+    .custom-control-input:checked ~ .custom-control-label {
+      // border-color: $primary;
+      color: $black;
+      background-color: $primary;
+      box-shadow: 0 0 25px rgba(48, 219, 147, 0.25);
+    }
+
+    .custom-control-label {
+      text-align: center;
+      background: $gray-900;
+      width: 80px;
+      height: 80px;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-direction: column;
+      padding: 0.2rem;
+      border-radius: 0.5rem;
+      border: 1px solid transparent;
+
+      &::before,
+      &::after {
+        content: none;
+      }
+
+      img { width: 60px }
+
+      small {
+        display: block;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        overflow: hidden;
+        font-weight: $font-weight-bold;
+      }
+    }
+  }
+}
+
+.radio-remove-style {
+  .custom-control {
+    padding-left: 0;
+  }
+
+  .custom-control-input:checked ~ .custom-control-label .game-icon-circle {
+    background: $red;
+    color: $white;
+  }
+
+  .custom-control-label {
+    &::before,
+    &::after {
+      content: none;
+    }
+  }
+}
+
+.game-icon-circle {
+  // background: $gray-200;
+  width: 55px;
+  height: 55px;
+  color: $gray-600;
+  border-radius: 50%;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto 0.3rem;
+
+  i { font-size: 2rem }
+}
+
+.game-name {
+  font-weight: $font-weight-bold;
+  font-size: $fs-sm;
+}

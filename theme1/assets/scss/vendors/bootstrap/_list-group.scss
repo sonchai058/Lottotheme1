@@ -1,0 +1,50 @@
+.list-group-item {
+    background-color: transparent;
+}
+
+.transactions {
+
+    .list-group-item {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        border: 0;
+        padding: 15px;
+
+        >div {
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+
+            i {
+                margin-right: 15px;
+            }
+
+            h5 {
+                font-size: 1rem;
+                margin: 0;
+            }
+        }
+
+        span {
+            font-size: 1.25rem;
+        }
+    }
+}
+
+.list-item-custom {
+
+    >div {
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        align-items: center;
+        margin-bottom: 25px;
+
+        img {
+            margin-right: 20px;
+        }
+    }
+}

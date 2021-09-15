@@ -1,0 +1,30 @@
+.loading {
+    background-color: black;
+    position: absolute;
+    z-index: 99999;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    opacity: .88;
+    backdrop-filter: blur(5rem);
+    display: none;
+
+    &.isloading {
+        // display: block;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+}
+
+.b-overlay {
+    .bg-dark {
+        background-color: $very-dark !important;
+    }
+}
+
+.withdraw-waiting {
+    background-color: $bg-dark;
+    border-radius: 8px !important;
+    margin: 15px 0;
+}

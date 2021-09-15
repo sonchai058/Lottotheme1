@@ -1,0 +1,63 @@
+.custom-select {
+  background: transparent url("data:image/svg+xml;charset=utf-8,%3Csvg xmlns='http://www.w3.org/2000/svg' width='4' height='5'%3E%3Cpath fill='%23343a40' d='M2 0L0 2h4zm0 5L0 3h4z'/%3E%3C/svg%3E") no-repeat right .75rem center/8px 10px !important;
+}
+
+.form-group-custom {
+
+  .input-group-prepend {
+    left: .75rem;
+    position: absolute;
+    z-index: 19;
+    pointer-events: none;
+    top: 1rem;
+    display: flex;
+
+    &~.custom-select, &~.form-control {
+      padding-left: 3rem;
+      background-color: transparent;
+      color: white;
+      border: 0;
+      border-bottom: 1px solid $bg-dark;
+      box-shadow: none !important;
+
+      &::placeholder {
+        color: $light-gray;
+      }
+
+      &:focus {
+        border-color: $primary;
+
+        &::placeholder {
+          opacity: .3;
+        }
+      }
+
+      &.is-valid {
+        border-color: $success;
+
+      }
+
+      &.is-invalid {
+        border-color: $danger;
+      }
+    }
+
+    &~.custom-select {
+
+      option {
+        background-color: $very-dark !important;
+      }
+    }
+
+    i {
+      color: $light-gray;
+      font-size: 1.5rem;
+    }
+  }
+
+  // .input-group-append {
+  //   position: absolute;
+  //   z-index: 19;
+  //   pointer-events: none;
+  // }
+}

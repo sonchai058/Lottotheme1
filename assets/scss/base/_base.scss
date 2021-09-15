@@ -1,0 +1,80 @@
+// -----------------------------------------------------------------------------
+// This file contains very basic styles.
+// -----------------------------------------------------------------------------
+
+html {
+  font-size: 90%;
+
+  @media (min-width: 768px) {
+    font-size: 100%;
+  }
+}
+
+html,
+body {
+  min-height: 100vh;
+  -webkit-font-smoothing: antialiased;
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a, a:active, a:visited {
+  text-decoration: none !important;
+}
+
+a.disabled {
+  color: $mid-gray2;
+}
+
+.form-xs,
+.form-sm,
+.form-md,
+.form-lg,
+.form-xl {
+  margin: 0 auto;
+}
+
+.form-xs {
+  max-width: 350px !important;
+}
+
+.form-sm {
+  max-width: 576px !important;
+}
+
+.form-md {
+  max-width: 768px !important;
+}
+
+.form-lg {
+  max-width: 992px !important;
+}
+
+.rounded-lg {
+  border-radius: 100px !important;
+}
+
+.main-container {
+  height: 100vh !important;
+}
+
+#__app, #__layout, #__main-container, #__nuxt, .df-full {
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  flex-grow: 1;
+}
+
+.d-flex--center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// Remove ring focus bootstrap
+*:focus {
+  outline: 0;
+}

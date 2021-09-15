@@ -1,0 +1,29 @@
+.form-control {
+    height: auto;
+    padding: 10px;
+}
+
+.form-control-custom {
+    background-color: transparent;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 1px solid $dark-gray;
+
+    &:focus {
+        background-color: transparent;
+        border-radius: 0;
+        border: 0;
+        outline: none !important;
+        box-shadow: none !important;
+        border-bottom: 1px solid $primary;
+        color: white;
+    }
+}
+
+.form-control-lg {
+    border-radius: 0;
+}
+
+// .invalid-feedback {
+//     position: absolute;
+// }

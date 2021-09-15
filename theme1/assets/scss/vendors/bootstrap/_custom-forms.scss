@@ -1,0 +1,16 @@
+.custom-control-input:checked ~ .custom-control-label::before {
+    background-color: $success;
+    border-color: $success;
+}
+
+.custom-control {
+    margin-top: -5px;
+}
+
+.custom-control-input {
+    outline: none !important;
+}
+
+.custom-select {
+    font-size: 1.25rem;
+}

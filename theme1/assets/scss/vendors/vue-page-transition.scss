@@ -1,0 +1,22 @@
+// Override
+
+#__nuxt {
+  .fade-in-down-leave-to,
+  .fade-in-up-leave-to,
+  .fade-in-left-leave-to,
+  .fade-in-right-leave-to {
+    transition: opacity .1s;
+  }
+
+  .fade-in-down-enter-to,
+  .fade-in-up-enter-to,
+  .fade-in-left-enter-to,
+  .fade-in-right-enter-to {
+    animation-duration: .3s;
+  }
+
+  .fade-enter-active,
+  .fade-leave-active {
+    transition-duration: 0.2s;
+  }
+}

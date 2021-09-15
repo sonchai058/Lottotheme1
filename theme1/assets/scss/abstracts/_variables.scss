@@ -1,0 +1,122 @@
+// -----------------------------------------------------------------------------
+// This file contains all application-wide Sass variables.
+// -----------------------------------------------------------------------------
+
+
+/// Regular font family
+/// @type List
+// $text-font-stack: "Sukhumvit Set", "Arial", sans-serif !default;
+$text-font-stack: sans-serif !default;
+
+/// Copy text color
+/// @type Color
+$text-color: hsl(0, 0%, 100%);
+
+/// Light gray
+/// @type Color
+$light-gray: hsl(0, 0%, 70%);
+
+/// Medium gray
+/// @type Color
+$mid-gray: hsl(0, 0, 60%);
+
+/// Medium gray
+/// @type Color
+$mid-gray2: hsl(0, 0, 41%);
+
+/// Dark gray
+/// @type Color
+$dark-gray: hsl(240, 15%, 22%);
+
+/// Background color Exchange page
+/// @type Color
+$bg-dark: hsl(240, 29%, 12%);
+
+/// Background color
+/// @type Color
+$very-dark: hsl(240, 24%, 7%);
+
+
+/// Font size extra large
+$fs-xl: 1.5rem;
+
+/// Font size large
+$fs-lg: 1.2rem;
+
+/// Font size large
+$fs-md: 1rem;
+
+/// Font size small
+$fs-sm: 0.9rem;
+
+/// Font size extra small
+$fs-xs: 0.75rem;
+
+
+// Color system
+$white:    hsl(0, 0%, 100%) !default;
+$gray-100: hsl(42, 17%, 98%) !default;
+$gray-200: hsl(42, 16%, 93%) !default;
+$gray-300: hsl(42, 14%, 89%) !default;
+$gray-400: hsl(42, 14%, 83%) !default;
+$gray-500: hsl(42, 11%, 71%) !default;
+$gray-600: hsl(42, 7%, 45%) !default;
+$gray-700: hsl(42, 9%, 31%) !default;
+$gray-800: hsl(42, 10%, 23%) !default;
+$gray-900: hsl(42, 11%, 15%) !default;
+$black:    hsl(0, 0%, 0%) !default;
+
+$blue:    hsl(211, 100%, 50%) !default;
+$indigo:  hsl(263, 90%, 51%) !default;
+$purple:  hsl(261, 51%, 51%) !default;
+$pink:    hsl(332, 79%, 58%) !default;
+$red:     hsl(0, 100%, 50%) !default;
+$orange:  hsl(27, 98%, 54%) !default;
+$yellow:  hsl(41, 99%, 67%) !default;
+$green:   hsl(141, 73%, 42%) !default;
+$teal:    hsl(162, 73%, 46%) !default;
+$cyan:    hsl(188, 78%, 41%) !default;
+$gold:    hsl(55, 91%, 72%) !default;
+
+// Color bootstrap
+$primary:       $gold !default;
+$secondary:     $gray-600 !default;
+$success:       $green !default;
+$info:          $cyan !default;
+$warning:       $yellow !default;
+$danger:        $red !default;
+$light:         $gray-100 !default;
+$dark:          $bg-dark;
+
+// Main
+$body-bg: $very-dark;
+$body-color: $text-color;
+$grid-gutter-width: 20px;
+$border-color: $dark-gray;
+$custom-select-indicator-color: $gray-600;
+
+// Fonts
+$font-family-base: $text-font-stack;
+$font-weight-bold: 500;
+$headings-margin-bottom: 8px;
+$headings-font-weight: $font-weight-bold;
+
+// Card
+$card-border-color: $gray-200;
+$card-cap-bg: rgba(#000000, 0.02);
+$card-border-radius: 10px;
+
+// Table
+$table-accent-bg: rgba(#000000, 0.03);
+$table-dark-bg: $bg-dark;
+
+// Text
+$text-muted: $light-gray;
+
+// Modal
+// Config modal slideup
+$modal-fade-transform: translate(0, 200px);
+$modal-transition: transform .3s cubic-bezier(0.49, 0.82, 0.43, 1.11);
+
+// Navbar Height
+$navbar-height: 4rem;

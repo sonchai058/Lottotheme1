@@ -1,0 +1,63 @@
+.nav-header-auth {
+
+    .nav-link {
+        color: $light-gray;
+        padding: .6rem 0;
+        transition: all .15s ease;
+        position: relative;
+        margin-right: 2rem;
+
+        &.exact-active, .active {
+            color: white;
+            font-size: 110%;
+
+            &::before {
+                content: "";
+                left: 10%;
+                right: 10%;
+            }
+        }
+
+        &::before {
+            content: none;
+            position: absolute;
+            z-index: 0;
+            left: 50%;
+            right: 50%;
+            bottom: 0;
+            background: $primary;
+            height: 2px;
+            transition-property: left right;
+            transition-duration: .15s;
+            transition-timing-function: ease-out;
+        }
+
+        :last-child {
+            margin-right: 0;
+        }
+    }
+}
+
+.custom-tabs {
+
+    .nav-tabs {
+        border: none !important;
+    }
+
+    .nav {
+        padding: 15px 0;
+
+        .nav-link {
+            color: $mid-gray2;
+    
+            &.active {
+                color: $primary;
+                font-weight: bold;
+                border: 0;
+                border-bottom: 2px solid $primary;
+                border-radius: 0;
+                background-color: transparent;
+            }
+        }
+    }
+}

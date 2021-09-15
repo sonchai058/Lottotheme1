@@ -1,0 +1,18 @@
+.btn-soft-success {
+  @include button-variant(rgba($success, 0.1), rgba($success, 0.1), rgba($success, 0.15), rgba($success, 0.15), rgba($success, 0.2), rgba($success, 0.2));
+  color: $gray-800 !important;
+}
+
+.btn-link-muted {
+  color: $text-muted !important;
+
+  &:hover,
+  &:focus {
+    text-decoration: none;
+    box-shadow: none;
+  }
+}
+
+.btn-lg {
+  padding: 10px;
+}

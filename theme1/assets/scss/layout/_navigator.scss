@@ -1,0 +1,107 @@
+// -----------------------------------------------------------------------------
+// This file contains all styles related to the navigator of the site/application.
+// -----------------------------------------------------------------------------
+
+@supports(padding: max(0px)) {
+  .navigator {
+    padding: 0 0 env(safe-area-inset-bottom) 0;
+  }
+}
+
+//   .navigator-screen {
+//   }
+
+.navigator {
+  background: white;
+  margin: 0;
+  display: flex;
+  justify-content: space-around;
+  border-radius: 10px 10px 0 0;
+  box-shadow: 0 -10px 16px rgba(0, 0, 0, 0.2);
+
+  .nav-item {
+    flex: 1;
+    list-style-type: none;
+    text-align: center;
+
+    &.middle-item span {
+      line-height: 1;
+      color: $light-gray;
+      display: block;
+      font-size: 12px;
+      margin-top: 0.5rem;
+      font-weight: bold;
+    }
+
+    &.middle-item .nav-link {
+      // border-radius: 50%;
+      // position: relative;
+      // width: 4.5rem;
+      // height: 4.5rem;
+      // margin: -2.2rem auto auto;
+      // display: flex;
+      // justify-content: center;
+      // align-items: center;
+      // border: 5px solid $dark-gray;
+
+      i {
+        border-radius: 50%;
+        background-color: $light-gray;
+        width: 4.5rem;
+        height: 4.5rem;
+        margin: -3rem auto auto;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        // border: 5px solid white;
+        font-size: 2rem;
+        color: white;
+      }
+
+      &.exact-active{
+        i {
+          background-color: $primary;
+          color: $dark-gray;
+        }
+
+        span {
+          color: $dark-gray;
+        }
+      }
+
+
+    }
+
+    // Not active middle item
+    &:not(.middle-item) {
+      .nav-link.exact-active {
+        color: $dark-gray;
+        filter: unset;
+        opacity: 1;
+
+        i {
+          color: $dark-gray;
+        }
+      }
+    }
+
+    .nav-link {
+      text-decoration: none;
+      padding: 0.9rem 0;
+      color: $light-gray;
+      font-size: 0.75rem;
+
+      i {
+        font-size: 1.5rem;
+        margin-bottom: 5px;
+      }
+
+      span {
+        line-height: 1;
+        display: block;
+        font-size: 12px;
+        font-weight: bold;
+      }
+    }
+  }
+}

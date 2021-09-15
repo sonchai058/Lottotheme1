@@ -1,0 +1,57 @@
+.balance-circle {
+    width: 195px;
+    height: 195px;
+    position: relative;
+    border: 2px solid $primary;
+    border-radius: 50%;
+    text-align: center;
+    margin: 20px auto;
+
+    .btn-free {
+        position: absolute;
+        height: 50px;
+        width: 50px;
+        z-index: 9;
+        background: $primary;
+        border-radius: 50%;
+        color: black;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: larger;
+        top: 0;
+        right: 8px;
+    }
+}
+
+.hot-menu {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    padding: 38px 20px 0 20px;
+
+    a {
+        display: flex;
+        flex-direction: column;
+        width: 100px;
+        align-items: center;
+        color: white;
+        
+        i {
+            width: 50px;
+            height: 50px;
+            border: 1px solid $dark-gray;
+            border-radius: 50%;
+            font-size: 1.5rem;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            margin-bottom: 5px;
+        }
+
+        span {
+            font-size: 12px;
+        }
+    }
+}

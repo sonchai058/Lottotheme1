@@ -1,0 +1,38 @@
+// .brand-games-list {
+//   padding: 2.5rem 1rem 1.5rem;
+
+//   > div {
+//     display: flex;
+//     justify-content: space-between;
+//     flex-wrap: wrap;
+//   }
+
+//   .custom-control {
+//     padding: 0;
+//     margin: 0 0 1rem 0;
+//     flex: 1 0 25%;
+//     justify-content: center;
+
+//     .custom-control-input:checked ~ .custom-control-label {
+//       background: $primary;
+//       color: $white;
+//     }
+
+//     .custom-control-label {
+//       background: $white;
+//       border-radius: 1rem;
+//       width: 70px;
+//       height: 70px;
+//       text-align: center;
+//       display: flex;
+//       justify-content: center;
+//       align-items: center;
+//       flex-direction: column;
+
+//       &::before,
+//       &::after {
+//         content: none;
+//       }
+//     }
+//   }
+// }

@@ -1,0 +1,34 @@
+/**
+ * Basic typography style for copy text
+ */
+p {
+  margin-bottom: 0.4rem;
+}
+
+.fs-xl {
+  font-size: $fs-xl !important;
+}
+
+.fs-lg {
+  font-size: $fs-lg !important;
+}
+
+.fs-md {
+  font-size: $fs-md !important;
+}
+
+.fs-sm {
+  font-size: $fs-sm !important;
+}
+
+.fs-xs {
+  font-size: $fs-xs !important;
+}
+
+.line-height-1 {
+  line-height: 1;
+}
+
+.line-height-sm {
+  line-height: 1.2;
+}

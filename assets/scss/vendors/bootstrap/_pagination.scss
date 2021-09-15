@@ -1,0 +1,25 @@
+.pagination {
+  .page-item {
+    margin: 0 1px;
+
+    &.active .page-link {
+      border-radius: 4px;
+    }
+
+    &.disabled .page-link {
+      color: $gray-600;
+    }
+
+    .page-link {
+      background: transparent;
+      padding: 0.4rem 0.6rem;
+      line-height: 1;
+      border: 1px solid transparent;
+      color: $gray-200;
+
+      &:focus {
+        box-shadow: none;
+      }
+    }
+  }
+}

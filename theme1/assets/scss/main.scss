@@ -1,0 +1,64 @@
+@charset "UTF-8";
+
+// 1. Configuration and helpers
+@import
+  "abstracts/variables",
+  "abstracts/functions",
+  "abstracts/mixins";
+
+// 2. Vendors
+@import
+  "vendors/bootstrap/index",
+  "vendors/bootstrap/nav",
+  "vendors/bootstrap/input",
+  "vendors/bootstrap/button",
+  "vendors/bootstrap/radio",
+  "vendors/bootstrap/table",
+  "vendors/bootstrap/modal",
+  "vendors/bootstrap/typography",
+  "vendors/bootstrap/overrides",
+  "vendors/bootstrap/progress",
+  "vendors/bootstrap/dropdown",
+  "vendors/bootstrap/pagination",
+  "vendors/bootstrap/checkbox",
+  "vendors/vue-page-transition",
+  "vendors/bootstrap/card",
+  "vendors/bootstrap/forms",
+  "vendors/bootstrap/text",
+  "vendors/bootstrap/reboot",
+  "vendors/bootstrap/custom-forms",
+  "vendors/bootstrap/list-group",
+  "vendors/bootstrap/alert";
+
+// 3. Base stuff
+@import
+  "base/base",
+  "base/fonts",
+  "base/typography",
+  "base/helpers";
+
+// 4. Layout-related sections
+@import
+  "layout/header",
+  "layout/footer",
+  'layout/navigator',
+  'layout/affiliate';
+
+// 5. Components
+@import
+  "components/loading",
+  "components/bank-logo",
+  "components/box-pin",
+  "components/button";
+
+// 6. Page-specific styles
+@import
+  "pages/wallet",
+  "pages/deposit",
+  "pages/games",
+  "pages/profile";
+
+// 7. Themes
+@import
+//   "themes/default",
+  "themes/theme_dark";
